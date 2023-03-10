@@ -1,0 +1,24 @@
+?- lubi(X,Y),lubi(Y,X),X\==Y.
+X = iza,
+Y = piotr ;
+X = piotr,
+Y = iza ;
+false.
+
+?- lubi(ola,Y).
+Y = ola ;
+Y = jan ;
+Y = pawel.
+
+?- lubi(ola,Y),lubi(iza,Y).
+Y = ola ;
+Y = ola ;
+Y = jan ;
+false.
+
+?- lubi(_,iza).
+true ;
+true ;
+false.
+
+?- 
