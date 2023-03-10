@@ -1,1 +1,55 @@
+?- na(c,a)
+|    .
+true.
 
+?- na(c,X).
+X = a ;
+X = b.
+
+?- na(X,a).
+X = c.
+
+?- na(d,_)
+|    .
+true.
+
+?- na(X,a) , na(X,b).
+X = c.
+
+-------------------------------------
+
+?- pod(a,c).
+true.
+
+?- pod(X,c).
+X = a ;
+X = b.
+
+?- pod(c,X).
+X = d.
+
+?- pod(d,_).
+false.
+
+---------------------------------------
+?- miedzy(c,a,d).
+true ;
+false.
+
+?- miedzy(b,a,c
+|    ).
+false.
+
+?- miedzy(X,a,d).
+X = c ;
+false.
+
+?- miedzy(c,X,Y).
+X = a,
+Y = d ;
+X = b,
+Y = d ;
+X = d,
+Y = a ;
+X = d,
+Y = b. 
