@@ -1,0 +1,40 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- lubi(jan,tatry).
+true .
+
+?- lubi(jerzy,sudety).
+false.
+
+?- lubi(jan,X).
+X = tatry ;
+X = beskidy.
+
+?- lubi(X,bieszczady).
+X = jerzy ;
+X = justyna.
+
+?- bratnia_dusza(jan,_).
+true.
+
+?- bratnia_dusza(justyna,X).
+X = jerzy ;
+false.
+
+?- bratnia_dusza(X,Y).
+X = jan,
+Y = jerzy ;
+X = jerzy,
+Y = jan ;
+X = jerzy,
+Y = justyna ;
+X = justyna,
+Y = jerzy ;
+false.
+
+?- 
