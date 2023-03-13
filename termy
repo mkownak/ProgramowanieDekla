@@ -1,0 +1,26 @@
+fu(a,X,f(g(Y))) fu(V,h(Z,V),f(V))
+V=a             fu(a, h(Z,a),f(a))
+fu(a,X,f(g(Y)))
+X=h(Z,a)
+fu(a,h(Z,a),f(g(Y))) fu(a,h(Z,a),f(a))
+g(Y) i a nie da się uzgodnić
+tych termów nie da się uzgodnić
+
+fu(a,X,f(g(Y))) fu(Y,f(Z),f(Z))
+Y=a             fu(a,f(Z),f(Z))
+fu(a,X,f(g(a)))
+X=f(Z)
+fu(a,F(Z),F(g(a))) fu(a,f(Z),f(Z))
+Z=g(a)
+fu(a,F(Z),F(g(a))) fu(a,f(g(a)),f(g(a)))
+
+fu(f(X),Y,a) fu(f(g(y)),c,Z)
+X=g(y)
+fu(f(g(y)),Y,a) fu(f(g(y)),c,Z)
+Y=c
+fu(f(g(c)),c,a) fu(f(g(c)),c,Z)
+Z=a
+fu(f(g(c)),c,a) fu(f(g(c)),c,a)
+
+*sprawdzanie w prologu
+fu(f(X),Y,a)= fu(f(g(y)),c,Z).
