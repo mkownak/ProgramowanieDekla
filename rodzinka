@@ -1,0 +1,11 @@
+%rodzic(X,Y) spelniony gdy X jest rodzicem Y
+rodzic(ania,jacek).
+rodzic(ania,basia).
+rodzic(jan,jacek).
+rodzic(jan,basia).
+rodzic(stefan,jan).
+rodzic(maria,ania).
+rodzic(borys,ania).
+%przodek(X,Y) spelniony gdy X jest przodkiem Y
+przodek(X,Y):-rodzic(X,Y).
+przodek(X,Y):-rodzic(X,Z),rodzic(Z,Y).
