@@ -1,0 +1,35 @@
+?- na(d,c).
+true.
+
+?- nad(c,e).
+true .
+
+?- nad(d,a).
+true ;
+false.
+
+?- nad(a,c).
+false.
+
+?- nad(X,c).
+X = d ;
+false.
+
+?- nad(X,e).
+X = a ;
+X = d ;
+X = c ;
+false.
+
+?- nad(d,X).
+X = c ;
+X = a ;
+X = b ;
+X = e ;
+X = g ;
+false.
+
+?- nad(g,_).
+false.
+
+?- 
