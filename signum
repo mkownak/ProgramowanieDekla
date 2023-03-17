@@ -1,0 +1,4 @@
+%signum(X,Y) spelniony gdy wartosc funkcji signum dla arguemntu X wynosi Y
+signum(X,-1):- X<0,!.
+signum(X,0):- X=0,!.
+Signum(X,1):- X>1,!.
