@@ -1,0 +1,10 @@
+?- kwadrat_listy([2,4],[4,16]).
+true.
+
+?- kwadrat_listy([1,5],[2,25]).
+false.
+
+?- kwadrat_listy([3,4,5],X).
+X = [9, 16, 25].
+
+?- 
