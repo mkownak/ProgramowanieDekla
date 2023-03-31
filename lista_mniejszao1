@@ -1,0 +1,7 @@
+%list_mniejszao1(L1,L2) spełniony gdy elementy listy L2 są odpowienie elemnty listy L1 pomniejszone o 1.
+
+%warunek konczacy rekurencje
+
+list_mniejszao1([],[]).
+
+list_mniejszao1([H1|T1],[H2|T2]):-H2 is H1-1, list_mniejszao1(T1,T2).
